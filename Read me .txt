@@ -1,0 +1,16 @@
+Automation Test for login scenario for this website:  https://automationexercise.com/  
+
+
+This task is done using Robot Fremawork - python -Selenium 
+ 
+Project Structure : 
+
+ 
+	        TestCases : Contains Test for Successful Login verification
+			Pages: Contains class for each package, including all page locators and actions 
+			Resources: Contains configuration files, to set all enviroment configuration 
+			           and TestData file, to set all user data 
+			Output : Contains executoin report  
+			 
+
+ To run test use this command in terminal:robot --include enabled -d Output --loglevel TRACE TestCases/VerifySuccessfulLogin.robot

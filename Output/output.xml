@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.11.4 on win32)" generated="20240210 13:08:11.460" rpa="false" schemaversion="3">
+<suite id="s1" name="VerifySuccessfulLogin" source="C:\Users\nesma\PycharmProjects\AutomationTest_Task\TestCases\VerifySuccessfulLogin.robot">
+<test id="s1-t1" name="Open browser and Navigate to website" line="13">
+<kw name="Launch browser and Open website" library="CommonKeywords">
+<msg timestamp="20240210 13:08:11.907" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>browser=${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240210 13:08:11.907" level="TRACE">Arguments: [ 'https://automationexercise.com/' | browser='chrome' | options='add_experimental_option("detach", True)' ]</msg>
+<msg timestamp="20240210 13:08:11.907" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/'.</msg>
+<msg timestamp="20240210 13:08:11.907" level="DEBUG">Selenium Manager binary found at: C:\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe</msg>
+<msg timestamp="20240210 13:08:11.907" level="DEBUG">Executing process: C:\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<msg timestamp="20240210 13:08:13.467" level="DEBUG">Driver path: C:\Users\nesma\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe</msg>
+<msg timestamp="20240210 13:08:13.467" level="DEBUG">Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe</msg>
+<msg timestamp="20240210 13:08:13.467" level="DEBUG">Using driver at: C:\Users\nesma\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe</msg>
+<msg timestamp="20240210 13:08:13.561" level="DEBUG">Started executable: `C:\Users\nesma\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe` in a child process with pid: 20336</msg>
+<msg timestamp="20240210 13:08:14.094" level="DEBUG">POST http://localhost:62624/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"detach": true, "extensions": [], "binary": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "args": []}}}}</msg>
+<msg timestamp="20240210 13:08:14.094" level="DEBUG">Starting new HTTP connection (1): localhost:62624</msg>
+<msg timestamp="20240210 13:08:14.959" level="DEBUG">http://localhost:62624 "POST /session HTTP/1.1" 200 0</msg>
+<msg timestamp="20240210 13:08:14.960" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"121.0.6167.160","chrome":{"chromedriverVersion":"121.0.6167.85 (3f98d690ad7e59242ef110144c757b2ac4eef1a2-refs/branch-heads/6167@{#1539})","userDataDir":"C:\\Users\\nesma\\AppData\\Local\\Temp\\scoped_dir20336_1067171437"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:62628"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"5d90c168d576315a6a5ec432be215f98"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20240210 13:08:14.960" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240210 13:08:14.960" level="DEBUG">POST http://localhost:62624/session/5d90c168d576315a6a5ec432be215f98/timeouts {"script": 5000}</msg>
+<msg timestamp="20240210 13:08:14.960" level="DEBUG">http://localhost:62624 "POST /session/5d90c168d576315a6a5ec432be215f98/timeouts HTTP/1.1" 200 0</msg>
+<msg timestamp="20240210 13:08:14.960" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20240210 13:08:14.960" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240210 13:08:14.960" level="DEBUG">POST http://localhost:62624/session/5d90c168d576315a6a5ec432be215f98/timeouts {"implicit": 0}</msg>
+<msg timestamp="20240210 13:08:14.966" level="DEBUG">http://localhost:62624 "POST /session/5d90c168d576315a6a5ec432be215f98/timeouts HTTP/1.1" 200 0</msg>
+<msg timestamp="20240210 13:08:14.966" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20240210 13:08:14.966" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240210 13:08:14.966" level="DEBUG">POST http://localhost:62624/session/5d90c168d576315a6a5ec432be215f98/timeouts {"pageLoad": 300000}</msg>
+<msg timestamp="20240210 13:08:14.969" level="DEBUG">http://localhost:62624 "POST /session/5d90c168d576315a6a5ec432be215f98/timeouts HTTP/1.1" 200 0</msg>
+<msg timestamp="20240210 13:08:14.969" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20240210 13:08:14.969" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240210 13:08:14.969" level="DEBUG">POST http://localhost:62624/session/5d90c168d576315a6a5ec432be215f98/url {"url": "https://automationexercise.com/"}</msg>
+<msg timestamp="20240210 13:08:19.458" level="DEBUG">http://localhost:62624 "POST /session/5d90c168d576315a6a5ec432be215f98/url HTTP/1.1" 200 0</msg>
+<msg timestamp="20240210 13:08:19.458" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20240210 13:08:19.458" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240210 13:08:19.458" level="DEBUG">Opened browser with session id 5d90c168d576315a6a5ec432be215f98.</msg>
+<msg timestamp="20240210 13:08:19.458" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20240210 13:08:11.907" endtime="20240210 13:08:19.458"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20240210 13:08:19.458" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20240210 13:08:19.458" level="DEBUG">POST http://localhost:62624/session/5d90c168d576315a6a5ec432be215f98/window/maximize {}</msg>
+<msg timestamp="20240210 13:08:19.674" level="DEBUG">http://localhost:62624 "POST /session/5d90c168d576315a6a5ec432be215f98/window/maximize HTTP/1.1" 200 0</msg>
+<msg timestamp="20240210 13:08:19.674" level="DEBUG">Remote response: status=200 | data={"value":{"height":832,"width":1552,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20240210 13:08:19.674" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240210 13:08:19.674" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20240210 13:08:19.458" endtime="20240210 13:08:19.674"/>
+</kw>
+<msg timestamp="20240210 13:08:19.674" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20240210 13:08:11.907" endtime="20240210 13:08:19.674"/>
+</kw>
+<tag>enabled</tag>
+<status status="PASS" starttime="20240210 13:08:11.891" endtime="20240210 13:08:19.674"/>
+</test>
+<status status="PASS" starttime="20240210 13:08:11.460" endtime="20240210 13:08:19.678"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">enabled</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="VerifySuccessfulLogin">VerifySuccessfulLogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
